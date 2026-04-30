@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-mountain-blue: #1A365D;
+  --color-sunrise-orange: #FF9800;
+  --color-surface: #F8F9FA;
+
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --spacing-section: 80px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-mountain-blue font-sans antialiased;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(26, 54, 93, 0.4), rgba(26, 54, 93, 0.1));
+}
+
+.bento-overlay {
+  background: linear-gradient(to top, rgba(26, 54, 93, 0.8) 0%, transparent 60%);
+}
